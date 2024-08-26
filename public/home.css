@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #34353B;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.navbar .title {
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    color: white;
+    padding: 10px 50px;
+    border-radius: 25px;
+    background-color: black;
+}
+
+.navbar .title .fa-book-open {
+    margin-right: 10px;
+}
+
+.navbar .profile-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.navbar .profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #323644;
+}
+
+.search-bar {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 90px;
+    padding: 50px 20px;
+    background-color: #323644;
+}
+
+.card {
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    margin: 10px 0;
+    display: block;
+    border-bottom: 1px solid #DDD;
+}
+
+.card .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card .rating {
+    margin: 10px 0;
+    color: #666;
+}
+
+.rating .fa-star, .rating .fa-star-half-alt {
+    color: #FFD700;
+}
